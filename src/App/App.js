@@ -1,6 +1,7 @@
 import React from 'react';
 import Titles from "../component/Titles";
 import Form from "../component/Form";
+import Weather from "../component/Weather";
 import './App.css';
 
 class App extends React.Component {
@@ -11,6 +12,7 @@ class App extends React.Component {
       <div className="App">
         <Titles />
         <Form />
+        <Weather />
       </div>
     );
   } 
