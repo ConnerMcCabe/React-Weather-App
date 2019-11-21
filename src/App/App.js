@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
 import Titles from "../component/Titles";
+import './App.css';
 
 class App extends React.Component {
   
