@@ -4,14 +4,16 @@ import Form from "../component/Form";
 import Weather from "../component/Weather";
 import './App.css';
 
-const API_KEY = "  ";
+const city = '';
+const API_KEY = '';
 
 // 34:38 tbc
+// ,${state},${country}
 
 class App extends React.Component {
 
   getWeather = async (e) => {
-    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`);
+    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
     const data = await api_call.json(); 
     console.log(data);
   }
