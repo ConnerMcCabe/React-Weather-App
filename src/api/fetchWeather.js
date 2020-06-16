@@ -7,7 +7,7 @@ export const getWeather = async (query) => {
     const { data } = await axios.get(URL, {
         params: {
             q: query,
-            units: 'metric',
+            units: 'imperial',
             APPID: API_KEY,
         }
     });
