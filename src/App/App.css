@@ -22,7 +22,8 @@ html, body, #root {
 
 .search {
   outline: none;
-  padding: 20px 7%;
+  font-size: 20px;
+  padding: 10px 5%;
   border-radius: 20px;
   border: none;
   margin-bottom: 5%;
@@ -46,6 +47,10 @@ p {
   letter-spacing: 0.05em;
 }
 
+h1 {
+  font-weight: 600;
+  color: white
+}
 .city-temp {
   font-size: 5rem;
   font-weight: bold;

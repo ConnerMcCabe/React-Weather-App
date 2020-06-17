@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Titles from "../component/Titles";
-import Weather from "../component/Weather";
 import { getWeather } from "../api/fetchWeather"
 import './App.css';
 
@@ -28,7 +27,16 @@ const App = () => {
           onKeyDown={search}
         />
         {weather.main && (
-          <Weather />
+          <div className="city">
+            <h2 className="city-name">
+              <span>{weather.name}</span>
+              <sup>{weather.sys.country}</sup>
+            </h2>
+            <div className="city-temp">
+              {Math.round(weather.main.temp)}
+              <sup>&deg;F</sup>
+            </div>
+          </div>
         )}
       </div>
     );
