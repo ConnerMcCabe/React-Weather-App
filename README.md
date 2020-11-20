@@ -10,3 +10,6 @@ a weather app pulling information from the OpenWeather API
 ### `npm i`
 ### `npm start`
 to start the app
+
+
+![screen shot of main page](./public/images/screenShot.png)
