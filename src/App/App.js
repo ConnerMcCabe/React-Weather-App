@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Titles from "../component/Titles";
 import { getWeather } from "../api/fetchWeather"
 import './App.css';
 
@@ -18,7 +17,7 @@ const App = () => {
   }
     return (
       <div className="main-container">
-        <Titles />
+        <h1>Weather Finder</h1>
         <input 
           type="text"
           className="search"
